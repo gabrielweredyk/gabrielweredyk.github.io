@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Falling Phrases</title>
+    <script src="create.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <center>
+        <h1>Falling Phrases Generator</h1>
+        <h3><i>If you don't know what a falling phrases puzzles look at some examples <a href="https://clroughdrafts.livejournal.com/4160.html">here</i></a></h3>
+        <h2>Enter your phrase here:</h2>
+        <p id="input" contenteditable="true">Type a sentence in this box right here</p><br />
+        <h2>Width:</h2>
+        <h3><i>In the box below insert the width of the puzzle which cannot be longer than the length of the phrase</i></h3>
+        <p id="width" contenteditable="true">10</p><br />
+        <button id="submit" onmousedown="submit()">Submit</button>
+        <p id="disclaimer"></p>
+        <table id="phrase" ></table>
+        <div id="divide"></div>
+        <table id="letters"></table>
+    </center>
+</body>
+</html>

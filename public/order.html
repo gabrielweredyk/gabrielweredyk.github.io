@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GWGW</title>
+    <script src="js/redirect.js"></script>
+    <script src="js/change.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logotransparent.png" />
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.11.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.11.1/firebase-auth.js"></script>
+    <script defer
+            src="/__/firebase/5.11.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.11.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.11.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+</head>
+<body>
+    <center>
+        <img src="img/transparent-land.png" width="50%" height="50%" /><br />
+        <h1>Ordering</h1>
+        <div class="row">
+            <button onmousedown='goto("../index")'>Home</button>
+            <button onmousedown="goto('here')">Ordering</button>
+            <button onmousedown="goto('../previous')">Previous Works</button>
+            <button onmousedown="goto('../info')">Technical Info</button>
+        </div>
+        <p id="output"></p>
+        <p id="question">What is your name?</p>
+        <p id="disclaimer"></p>
+        <p id="answer" contenteditable="true"></p><br />
+        <script>
+            var input = document.getElementById("answer");
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    document.getElementById("continue").click();
+                }
+            });
+        </script>
+        <p id="answers"></p>
+        <div id="buttons">
+            <button id="back" onclick="next(false)">Back</button>
+            <button id="continue" onclick="next(true)">Continue</button>
+        </div>
+    </center>
+    
+</body>
+</html>
