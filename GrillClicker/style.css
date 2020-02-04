@@ -1,0 +1,19 @@
+﻿body{
+    background-color:#222324;
+    color:white;
+}
+#grill {
+    background-color:inherit;
+    border-collapse:collapse;
+}
+#grill > img{
+    width:25%;
+    height:25%;
+}
+.upgrades > button{
+    display:inline-block;
+    background-color:darkred;
+    padding:10px;
+    margin:10px;
+    color:white;
+}

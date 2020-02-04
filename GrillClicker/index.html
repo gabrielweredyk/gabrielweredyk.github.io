@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Grill Clicker</title>
+    <script src="script.js"></script>
+</head>
+<body onload="Grillin()">
+    <h1>Grill Clicker</h1>
+    <h2 id="score">Cash: 0</h2>
+    <h2 id="income">Passive Income: 0</h2>
+
+    <button id="grill" onclick="Click()"><img src="mygrill.png"/></button>
+
+    <div class="upgrades">
+        <button id="spatula" onclick="Upgrade('spatula')">
+            <h4>Spatula</h4>
+            <p id="owned">Amount owned: 0</p>
+            <p id="cost">Cost: $10</p>
+            <p>Gives +$1 per click</p>
+        </button>
+        <button id="dad" onclick="Upgrade('dad')">
+            <h4>Dad</h4>
+            <p id="owned">Amount owned: 0</p>
+            <p id="cost">Cost: $100</p>
+            <p>Each dad generates $1 per secons</p>
+        </button>
+        <button id="seasoning" onclick="Upgrade('seasoning')">
+            <h4>Seasoning</h4>
+            <p id="owned">Amount owned: 0</p>
+            <p id="cost">Cost: $1000</p>
+            <p>Gives a +1% chance of giving double money</p>
+        </button>
+        <button id="beverages" onclick="Upgrade('beverages')">
+            <h4>Beverages</h4>
+            <p id="owned">Amount owned: 0</p>
+            <p id="cost">Cost: $10000</p>
+            <p>Improves Dad efficency</p>
+        </button>
+        <button id="pool" onclick="Upgrade('pool')">
+            <h4 id="button">Pool</h4>
+            <p id="owned">Amount owned: 1</p>
+            <p id="cost">Cost: $100000</p>
+            <p>Gives more upgrades per purchase</p>
+        </button>
+    </div>
+</body>
+</html>
