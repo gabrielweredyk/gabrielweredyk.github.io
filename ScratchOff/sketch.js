@@ -1,5 +1,4 @@
 var images = 5;
-//stupid github
 
 let img;
 let dog;
