@@ -32,12 +32,14 @@ function ScoreDecreaser() {
 }
 
 function CorrectGuess() {
+
     time = 100;
     rounds--;
     stage = Math.floor(Math.random() * 10);
     document.getElementById("hidden-img").setAttribute("src", "img/" + animals[stage][0] + ".png");
     document.getElementById("hidden-img").style.filter = "blur(25px)";
     document.getElementById("input").value = "";
+    document.getElementById("input").focus();
     if (0 > rounds) {
         finished = true;
         document.getElementById("score-type").innerHTML = "Final Score:";
