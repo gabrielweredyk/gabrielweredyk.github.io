@@ -10,7 +10,7 @@ var first = true;
 
 function setup() {
     createCanvas(window.innerWidth - 10, window.innerHeight - 20);
-    dog = loadImage("img/" + Math.floor(Math.random * 5).toString() + ".png");
+    dog = loadImage("img/" + Math.floor(Math.random() * 5).toString() + ".png");
     img = createImage(window.innerWidth - 10, window.innerHeight - 20);
     img.loadPixels();
     for (let i = 0; i < img.width; i++) {
