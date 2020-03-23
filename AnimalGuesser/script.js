@@ -35,9 +35,6 @@ function CorrectGuess() {
         inputs.removeChild(inputs.children[0]);
     }
 
-    img.style.width = (window.innerWidth / 2).toString() + "px";
-    img.style.height = (window.innerHeight / 2).toString() + "px";
-
     for (i = 0; i < animals[stage].length; i++) {
         let input = document.createElement("INPUT");
         input.setAttribute("type", "text");
