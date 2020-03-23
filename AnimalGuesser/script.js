@@ -48,7 +48,7 @@ function CorrectGuess() {
     inputs.children[0].focus();
 
     rounds--;
-    img.setAttribute("src", "img/" + animals[stage] + ".png");
+    img.setAttribute("src", "img/" + animals[stage] + ".jpg");
     img.style.filter = "blur(25px)";
     if (0 > rounds) {
         finished = true;
