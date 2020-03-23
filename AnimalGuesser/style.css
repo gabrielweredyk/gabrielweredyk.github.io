@@ -1,4 +1,7 @@
 body{
+    background-image: url(img/left.png), url(img/right.png);
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
     text-align:center;
 }
 img{

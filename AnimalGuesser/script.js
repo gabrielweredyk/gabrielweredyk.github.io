@@ -9,9 +9,9 @@ var selected = 0;
 
 var rounds = 10;
 
-var animals = ["bunny", "cat", "chick", "dog", "hedgehog", "lizard", "penguin", "pony", "seal", "squirrel"];
+var animals = ["balloons", "bunny", "cat", "chick", "confetti", "dog", "fireworks", "flowers", "hedgehog", "lizard", "penguin", "pony", "rainbow", "seal", "squirrel", "sunflowers"];
 
-var stage = Math.floor(Math.random() * 10);
+var stage = Math.floor(Math.random() * animals.length);
 
 function ScoreDecreaser() {
     if (!finished) {
@@ -29,7 +29,7 @@ function CorrectGuess() {
     var img = document.getElementById("hidden-img");
 
 
-    stage = Math.floor(Math.random() * 10);
+    stage = Math.floor(Math.random() * animals.length);
 
     while (inputs.children.length != 0) {
         inputs.removeChild(inputs.children[0]);
