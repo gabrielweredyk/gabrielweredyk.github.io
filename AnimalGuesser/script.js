@@ -15,7 +15,7 @@ var stage = Math.floor(Math.random() * animals.length);
 
 function ScoreDecreaser() {
     if (!finished) {
-        if (score > 4 || time > 4) {
+        if (score - time > 0) {
             time -= 4;
             document.getElementById("score").innerHTML = (score + time).toString();
             document.getElementById("hidden-img").style.filter = "blur(" + (time / 4).toString() + "px)";
